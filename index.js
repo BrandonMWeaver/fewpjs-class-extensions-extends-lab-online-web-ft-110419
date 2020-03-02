@@ -19,3 +19,7 @@ class Triangle extends Polygon {
            this._sides[1] + this._sides[2] > this._sides[0];
   }
 }
+
+class Square extends Polygon {
+  
+}
