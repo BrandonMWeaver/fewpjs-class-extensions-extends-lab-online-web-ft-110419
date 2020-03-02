@@ -23,8 +23,8 @@ class Triangle extends Polygon {
 
 class Square extends Polygon {
   get isValid() {
-    return this._sides.reduce((memo, side) => memo + side, 0) === this._sides[0] * 4 &&
-           this._sides.length === 4;
+    return this._sides.length === 4 &&
+           this._sides.reduce((memo, side) => memo + side, 0) === this._sides[0] * 4;
   }
   
   get area() {
